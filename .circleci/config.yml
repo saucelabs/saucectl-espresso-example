@@ -1,0 +1,18 @@
+version: 2.1
+orbs:
+  saucectl: saucelabs/saucectl-run@1.0.0
+
+jobs:
+  test-espresso:
+    docker:
+      - image: circleci/node:12.21
+    steps:
+      - checkout
+      - saucectl/saucectl-run:
+          testing-environment: sauce
+
+workflows:
+  version: 2
+  default_workflow:
+    jobs:
+      - test-espresso
