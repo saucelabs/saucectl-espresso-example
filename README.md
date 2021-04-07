@@ -13,6 +13,8 @@ our [documentation](https://docs.saucelabs.com/testrunner-toolkit/installation).
 npm install -g saucectl
 ```
 
+⚠ Make sure saucectl version is newer than **v0.36.0**
+
 ### Set Your Sauce Labs Credentials
 
 ```shell
