@@ -25,9 +25,3 @@ suites:
       - name: "Google Pixel C GoogleAPI Emulator"
         platformVersions:
           - "8.1"
-artifacts:
-  download:
-    match:
-      - "*.junit.xml"
-    when: always
-    directory: ./
