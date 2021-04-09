@@ -54,3 +54,11 @@ suites:
       - name: "Android GoogleApi Emulator"
         platformVersions:
           - "11.0"
+
+# Controls whats artifacts to fetch when the run on Sauce Cloud has finished.
+artifacts:
+  download:
+    when: always
+    match:
+      - junit.xml
+    directory: ./artifacts/
