@@ -20,6 +20,8 @@ suites:
       class:
         - com.example.android.testing.androidjunitrunnersample.CalculatorAddParameterizedTest
         - com.example.android.testing.androidjunitrunnersample.CalculatorInstrumentationTest
+      size: small
+      package: com.example.android.testing.androidjunitrunnersample
     devices:
       - name: "Android GoogleApi Emulator"
         orientation: portrait
