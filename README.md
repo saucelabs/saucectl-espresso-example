@@ -10,7 +10,7 @@ our [documentation](https://docs.saucelabs.com/testrunner-toolkit/installation).
 ### Install `saucectl`
 
 ```shell
-npm install -g saucectl
+curl -L https://saucelabs.github.io/saucectl/install | bash
 ```
 
 ⚠ Make sure saucectl version is newer than **v0.36.0**
@@ -35,4 +35,4 @@ saucectl run --test-env sauce
 
 ## The Config
 
-[Follow me](.sauce/config.yml) if you'd like to see how saucectl is configured for this repository. 
+[Follow me](.sauce/config.yml) if you'd like to see how saucectl is configured for this repository.
