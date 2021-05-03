@@ -1,6 +1,6 @@
 # saucectl espresso examples
 
-Here we have a list additional examples that cover more complicated setups.
+Here we have a list of additional examples that cover more complicated setups.
 
 | Example | Description |
 | ------- | ----------- |
