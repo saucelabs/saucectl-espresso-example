@@ -11,7 +11,7 @@ env:
   SAUCE_ACCESS_KEY: ${{secrets.SAUCE_ACCESS_KEY}}
 
 jobs:
-  main:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -22,7 +22,7 @@ jobs:
         with:
           testing-environment: sauce
           concurrency: 10
-  cucumber:
+  cucumber-test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
