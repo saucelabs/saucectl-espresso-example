@@ -10,7 +10,7 @@ our [documentation](https://docs.saucelabs.com/testrunner-toolkit/installation).
 ### Install `saucectl`
 
 ```shell
-npm install -g saucectl
+curl -L https://saucelabs.github.io/saucectl/install | bash
 ```
 
 ### Set Your Sauce Labs Credentials
