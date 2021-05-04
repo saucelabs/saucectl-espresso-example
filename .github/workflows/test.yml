@@ -22,3 +22,20 @@ jobs:
         with:
           testing-environment: sauce
           concurrency: 10
+  cucumber-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install saucectl
+        uses: saucelabs/saucectl-run-action@v1
+        with:
+          skip-run: true
+          testing-environment: ""
+          concurrency: 10
+
+      - name: Espresso with Cucumber
+        run: |
+          cd examples/cucumber
+          saucectl run
