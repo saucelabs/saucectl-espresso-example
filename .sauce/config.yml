@@ -15,42 +15,31 @@ espresso:
   app: ./apps/calc.apk
   testApp: ./apps/calc-success.apk
 suites:
-  - name: "saucy barista"
+  - name: "saucy barista - combined"
     testOptions:
       class:
         - com.example.android.testing.androidjunitrunnersample.CalculatorAddParameterizedTest
         - com.example.android.testing.androidjunitrunnersample.CalculatorInstrumentationTest
-    devices:
-      - name: "Android GoogleApi Emulator"
-        orientation: portrait
-        platformVersions:
-          - "11.0"
-          - "10.0"
+    emulators:
       - name: "Google Pixel C GoogleAPI Emulator"
+        orientation: landscape
         platformVersions:
           - "8.1"
+    devices:
+      - id: Huawei_P10_real
+      - name: "Huawei.*"
+        platformVersion: 8.0.0
   - name: "saucy barista - package"
     testOptions:
       package: com.example.android.testing.androidjunitrunnersample
-    devices:
+    emulators:
       - name: "Android GoogleApi Emulator"
         platformVersions:
           - "11.0"
   - name: "saucy barista - test size"
     testOptions:
       size: small
-    devices:
-      - name: "Android GoogleApi Emulator"
-        platformVersions:
-          - "11.0"
-  - name: "saucy barista - combined"
-    testOptions:
-      class:
-        - com.example.android.testing.androidjunitrunnersample.CalculatorAddParameterizedTest
-        - com.example.android.testing.androidjunitrunnersample.CalculatorInstrumentationTest
-      size: small
-      package: com.example.android.testing.androidjunitrunnersample
-    devices:
+    emulators:
       - name: "Android GoogleApi Emulator"
         platformVersions:
           - "11.0"

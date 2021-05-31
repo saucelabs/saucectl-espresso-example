@@ -15,7 +15,7 @@ espresso:
   testApp: ./apps/espresso-cucumber-success.apk
 suites:
   - name: "saucy cucumber espresso"
-    devices:
+    emulators:
       - name: "Android GoogleApi Emulator"
         platformVersions:
           - "11.0"
