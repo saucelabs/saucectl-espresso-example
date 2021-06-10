@@ -32,7 +32,7 @@ saucectl run
 ![sauce cloud example](assets/sauce_cloud_example.gif)
 
 ## Support
-Espresso only works on sauce cloud both Android Emulators and Real Devices. 
+Espresso only works on sauce cloud for both Android Emulators and Real Devices. 
 
 [Docker mode](https://docs.saucelabs.com/testrunner-toolkit/configuration/common-syntax/index.html#mode) is not supported.
 
