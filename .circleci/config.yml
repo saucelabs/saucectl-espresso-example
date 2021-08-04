@@ -8,8 +8,7 @@ jobs:
       - image: circleci/node:12.21
     steps:
       - checkout
-      - saucectl/saucectl-run:
-          testing-environment: sauce
+      - saucectl/saucectl-run
 
 workflows:
   version: 2
