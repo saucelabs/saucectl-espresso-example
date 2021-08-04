@@ -40,3 +40,5 @@ Espresso only works on sauce cloud for both Android Emulators and Real Devices.
 ## The Config
 
 [Follow me](.sauce/config.yml) if you'd like to see how saucectl is configured for this repository.
+
+Our IDE Integrations (e.g. [Visual Studio Code](https://docs.saucelabs.com/testrunner-toolkit/ide-integrations/vscode)) can help you out by validating the YAML files and provide handy suggestions, so make sure to check them out!
