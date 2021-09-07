@@ -5,7 +5,7 @@ orbs:
 jobs:
   test-espresso:
     docker:
-      - image: circleci/node:12.21
+      - image: cimg/node:lts
     steps:
       - checkout
       - saucectl/saucectl-run
