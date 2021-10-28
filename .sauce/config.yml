@@ -5,33 +5,32 @@ sauce:
   # Controls how many suites are executed at the same time (sauce test env only).
   concurrency: 10
   metadata:
-    name: Testing Espresso Support
     tags:
       - e2e
       - release team
       - other tag
     build: Release $CI_COMMIT_SHORT_SHA
 espresso:
-  app: ./apps/calc.apk
-  testApp: ./apps/calc-success.apk
+  app: ./apps/mda-1.0.6-8.apk
+  testApp: ./apps/mda-androidTest-1.0.6-8.apk
 suites:
   - name: "saucy barista - combined"
     testOptions:
       class:
-        - com.example.android.testing.androidjunitrunnersample.CalculatorAddParameterizedTest
-        - com.example.android.testing.androidjunitrunnersample.CalculatorInstrumentationTest
+        - com.saucelabs.mydemoapp.android.view.activities.DashboardToCheckout
+        - com.saucelabs.mydemoapp.android.view.activities.LoginTest
     emulators:
       - name: "Google Pixel C GoogleAPI Emulator"
         orientation: landscape
         platformVersions:
           - "8.1"
     devices:
-      - id: Huawei_P10_real
-      - name: "Huawei.*"
-        platformVersion: 8.0.0
+      - id: LG_Q6_real_us
+      - name: "Samsung.*"
+        platformVersion: "8.0.0"
   - name: "saucy barista - package"
     testOptions:
-      package: com.example.android.testing.androidjunitrunnersample
+      package: com.saucelabs.mydemoapp.android.view.activities
     emulators:
       - name: "Android GoogleApi Emulator"
         platformVersions:
