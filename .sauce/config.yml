@@ -48,7 +48,7 @@ suites:
           - "11.0"
   - name: "saucy barista - test size"
     testOptions:
-      size: small
+      size: large
     emulators:
       - name: "Android GoogleApi Emulator"
         platformVersions:
