@@ -11,8 +11,8 @@ sauce:
       - other tag
     build: Release $CI_COMMIT_SHORT_SHA
 espresso:
-  app: ./apps/mda-1.0.8-10.apk
-  testApp: ./apps/mda-androidTest-1.0.8-10.apk
+  app: ./apps/mda-1.0.10-12.apk
+  testApp: ./apps/mda-androidTest-1.0.10-12.apk
 suites:
   - name: "saucy barista - combined"
     testOptions:
@@ -48,7 +48,7 @@ suites:
           - "11.0"
   - name: "saucy barista - test size"
     testOptions:
-      size: small
+      size: large
     emulators:
       - name: "Android GoogleApi Emulator"
         platformVersions:
