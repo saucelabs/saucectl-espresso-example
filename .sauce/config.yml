@@ -20,10 +20,10 @@ suites:
         - com.saucelabs.mydemoapp.android.view.activities.DashboardToCheckout
         - com.saucelabs.mydemoapp.android.view.activities.LoginTest
     emulators:
-      - name: "Google Pixel C GoogleAPI Emulator"
+      - name: "Android GoogleAPI Emulator"
         orientation: portrait # this demo app doesn't support landscape orientation
         platformVersions:
-          - "8.1"
+          - "12.0"
     devices:
       - id: LG_Q6_real_us
       - name: "Samsung.*"
