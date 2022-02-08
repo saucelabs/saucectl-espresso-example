@@ -21,7 +21,7 @@ suites:
         - com.saucelabs.mydemoapp.android.view.activities.LoginTest
     emulators:
       - name: "Google Pixel C GoogleAPI Emulator"
-        orientation: landscape
+        orientation: portrait # this demo app doesn't support landscape orientation
         platformVersions:
           - "8.1"
     devices:
