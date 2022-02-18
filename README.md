@@ -34,7 +34,7 @@ saucectl run
 ### Running the Full Configured Examples
 
 ```shell
-saucectl run -c .sauce/full-config.yml
+saucectl run --config .sauce/full-config.yml
 ```
 
 ## Support
