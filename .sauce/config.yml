@@ -14,7 +14,7 @@ espresso:
   app: ./apps/mda-1.0.10-12.apk
   testApp: ./apps/mda-androidTest-1.0.10-12.apk
 suites:
-  - name: "saucy barista - combined"
+  - name: "saucy barista on Android Emulator"
     emulators:
       - name: "Android GoogleAPI Emulator"
         platformVersions:
