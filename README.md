@@ -31,6 +31,12 @@ saucectl run
 
 ![sauce cloud example](assets/sauce_cloud_example.gif)
 
+### Running the Full Configured Examples
+
+```shell
+saucectl run -c .sauce/full-config.yml
+```
+
 ## Support
 Espresso only works on sauce cloud for both Android Emulators and Real Devices. 
 
