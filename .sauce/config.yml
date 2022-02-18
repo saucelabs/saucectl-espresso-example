@@ -15,46 +15,10 @@ espresso:
   testApp: ./apps/mda-androidTest-1.0.10-12.apk
 suites:
   - name: "saucy barista - combined"
-    testOptions:
-      class:
-        - com.saucelabs.mydemoapp.android.view.activities.DashboardToCheckout
-        - com.saucelabs.mydemoapp.android.view.activities.LoginTest
     emulators:
       - name: "Android GoogleAPI Emulator"
-        orientation: portrait # this demo app doesn't support landscape orientation
         platformVersions:
           - "12.0"
-    devices:
-      - id: LG_Q6_real_us
-      - name: "Samsung.*"
-        platformVersion: "8.0.0"
-
-# To remove all shared state from your device's CPU and memory after each test, use the clearPackageData + useTestOrchestrator flag.
-# Supported on real devices only.
-# https://developer.android.com/training/testing/junit-runner#using-android-test-orchestrator
-  - name: "clear package data"
-    testOptions:
-      clearPackageData: true
-      useTestOrchestrator: true
-    devices:
-      - name: "Samsung.*"
-
-  - name: "saucy barista - package"
-    testOptions:
-      package: com.saucelabs.mydemoapp.android.view.activities
-    emulators:
-      - name: "Android GoogleApi Emulator"
-        platformVersions:
-          - "11.0"
-  - name: "saucy barista - test size"
-    testOptions:
-      size: large
-    emulators:
-      - name: "Android GoogleApi Emulator"
-        platformVersions:
-          - "11.0"
-
-# Controls what artifacts to fetch when the suite on Sauce Cloud has finished.
 artifacts:
   download:
     when: always
