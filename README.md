@@ -5,7 +5,7 @@ Example running saucectl with espresso.
 ## What You'll Need
 
 The steps below illustrate one of the quickest ways to get set up. If you'd like a more in-depth guide, please check out
-our [documentation](https://docs.saucelabs.com/testrunner-toolkit/installation).
+our [documentation](https://docs.saucelabs.com/dev/cli/saucectl/#installing-saucectl/).
 
 _If you're using VS Code, you can use [Runme](https://marketplace.visualstudio.com/items?itemName=stateful.runme) to run the following commands directly from VS Code._
 
@@ -31,7 +31,7 @@ Simply check out this repo and run the appropriate command below :rocket:
 saucectl run
 ```
 
-![sauce cloud example](assets/sauce_cloud_example.gif)
+![sauce cloud example](assets/espresso.gif)
 
 ### Running the Full Configured Examples
 
@@ -42,7 +42,7 @@ saucectl run --config .sauce/full-config.yml
 ## Support
 Espresso only works on sauce cloud for both Android Emulators and Real Devices. 
 
-[Docker mode](https://docs.saucelabs.com/testrunner-toolkit/configuration/common-syntax/index.html#mode) is not supported.
+[Docker mode](https://docs.saucelabs.com/dev/cli/saucectl/#docker-runner) is not supported.
 
 
 ## The Config
