@@ -30,7 +30,6 @@ suites:
         platformVersion: "8.0.0"
 
 # To remove all shared state from your device's CPU and memory after each test, use the clearPackageData + useTestOrchestrator flag.
-# Supported on real devices only.
 # https://developer.android.com/training/testing/junit-runner#using-android-test-orchestrator
   - name: "clear package data"
     testOptions:
