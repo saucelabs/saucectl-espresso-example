@@ -4,12 +4,11 @@ sauce:
   region: us-west-1
   concurrency: 10 # Controls how many suites are executed at the same time (sauce test env only).
   metadata:
-    name: Testing Cucumber and Espresso Support
     tags:
       - e2e
       - release team
       - other tag
-  build: Release $CI_COMMIT_SHORT_SHA
+    build: Release $CI_COMMIT_SHORT_SHA
 espresso:
   app: ./apps/espresso-cucumber.apk
   testApp: ./apps/espresso-cucumber-success.apk
@@ -26,3 +25,7 @@ artifacts:
     match:
       - "*junit.xml"
     directory: ./artifacts/
+
+reporters:
+  spotlight: # Prints an overview of failed or otherwise interesting jobs.
+    enabled: true
