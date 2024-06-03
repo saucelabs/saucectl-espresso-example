@@ -25,3 +25,7 @@ artifacts:
     match:
       - junit.xml
     directory: ./artifacts/
+
+reporters:
+  spotlight: # Prints an overview of failed or otherwise interesting jobs.
+    enabled: true
