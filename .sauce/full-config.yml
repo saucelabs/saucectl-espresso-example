@@ -26,6 +26,7 @@ suites:
           - "15.0"
     devices:
       - name: "Samsung.*"
+        platformVersion: "14"
 
   - name: "saucy barista - specify device by name"
     testOptions:
