@@ -23,10 +23,9 @@ suites:
       - name: "Android GoogleAPI Emulator"
         orientation: portrait # this demo app doesn't support landscape orientation
         platformVersions:
-          - "12.0"
+          - "15.0"
     devices:
       - name: "Samsung.*"
-        platformVersion: "8.0.0"
 
   - name: "saucy barista - specify device by name"
     testOptions:
@@ -34,15 +33,13 @@ suites:
         - com.saucelabs.mydemoapp.android.view.activities.LoginTest
     devices:
       - name: "Samsung.*"
-        platformVersion: "8.0.0"
 
   - name: "saucy barista - specify device by id"
     testOptions:
       class:
         - com.saucelabs.mydemoapp.android.view.activities.LoginTest
     devices:
-      - id: LG_Q6_real_us
-        platformVersion: "8.0.0"
+      - id: Samsung_Galaxy_S21_14_real_us
 
   # To remove all shared state from your device's CPU and memory after each test, use the clearPackageData + useTestOrchestrator flag.
   # Supported on real devices only.
@@ -60,7 +57,7 @@ suites:
     emulators:
       - name: "Android GoogleApi Emulator"
         platformVersions:
-          - "11.0"
+          - "15.0"
 
   - name: "saucy barista - test size"
     testOptions:
@@ -68,7 +65,7 @@ suites:
     emulators:
       - name: "Android GoogleApi Emulator"
         platformVersions:
-          - "11.0"
+          - "15.0"
 
 # Controls what artifacts to fetch when the suite on Sauce Cloud has finished.
 artifacts:

@@ -17,8 +17,7 @@ suites:
     emulators:
       - name: "Android GoogleApi Emulator"
         platformVersions:
-          - "11.0"
-          - "10.0"
+          - "15.0"
 artifacts:
   download:
     when: always
