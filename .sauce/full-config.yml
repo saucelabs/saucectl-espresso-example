@@ -11,8 +11,8 @@ sauce:
       - other tag
     build: Release $CI_COMMIT_SHORT_SHA
 espresso:
-  app: ./apps/mda-1.0.10-12.apk
-  testApp: ./apps/mda-androidTest-1.0.10-12.apk
+  app: ./apps/mda-2.2.0-25.apk
+  testApp: ./apps/mda-androidTest-2.2.0-25.apk
 suites:
   - name: "saucy barista - combined emulator and real devices"
     testOptions:
@@ -40,7 +40,7 @@ suites:
       class:
         - com.saucelabs.mydemoapp.android.view.activities.LoginTest
     devices:
-      - id: Samsung_Galaxy_S21_14_real_us
+      - id: Samsung_Galaxy_S24_15_real_sjc1
 
   # To remove all shared state from your device's CPU and memory after each test, use the clearPackageData + useTestOrchestrator flag.
   # Supported on real devices only.
@@ -56,7 +56,7 @@ suites:
     testOptions:
       package: com.saucelabs.mydemoapp.android.view.activities
     emulators:
-      - name: "Android GoogleApi Emulator"
+      - name: "Android GoogleAPI Emulator"
         platformVersions:
           - "15.0"
 
@@ -64,9 +64,9 @@ suites:
     testOptions:
       size: large
     emulators:
-      - name: "Android GoogleApi Emulator"
+      - name: "Android GoogleAPI Emulator"
         platformVersions:
-          - "15.0"
+          - "current_major"
 
 # Controls what artifacts to fetch when the suite on Sauce Cloud has finished.
 artifacts:

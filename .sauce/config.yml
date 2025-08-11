@@ -11,8 +11,8 @@ sauce:
       - other tag
     build: Release $CI_COMMIT_SHORT_SHA
 espresso:
-  app: ./apps/mda-1.0.10-12.apk
-  testApp: ./apps/mda-androidTest-1.0.10-12.apk
+  app: ./apps/mda-2.2.0-25.apk
+  testApp: ./apps/mda-androidTest-2.2.0-25.apk
 suites:
   - name: "saucy barista on Android Emulator"
     emulators:
